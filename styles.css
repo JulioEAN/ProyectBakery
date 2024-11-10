@@ -1,0 +1,70 @@
+body{
+    text-align: center;
+    min-height: 100vh;
+}
+
+header{
+    padding: 20px;
+    background-color: beige;
+}
+
+nav{
+    position: fixed;
+    text-align: justify;
+}
+
+.presentacion{
+    border: solid red 2px;
+    padding: 20px;
+}
+
+.especiales{
+    border: solid purple 2px;
+    padding: 20px;
+}
+
+.favoritos{
+    border: solid green 2px;
+    padding: 20px;
+}
+
+.clientes{
+    border: solid blue 2px;
+    padding: 20px;
+}
+
+.contacto{
+    border: solid yellow 2px;
+    padding: 20px;
+}
+
+.social{
+    border: solid black 2px;
+}
+
+.star1{
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    background-image: url(icons/icon-star.svg);
+    background-repeat: repeat-x;
+    background-size: 30px 30px;
+}
+
+.star2{
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    background-image: url(icons/icon-star.svg);
+    background-repeat: repeat-x;
+    background-size: 30px 30px;
+}
+
+.star3{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(icons/icon-star.svg);
+    background-repeat: repeat-x;
+    background-size: 30px 30px;
+}
