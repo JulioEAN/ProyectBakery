@@ -6,6 +6,7 @@
     <title>BAKERY'S</title>
     <link rel="website icon" type="jpg"
     href="./icons/icon-star.svg">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -17,7 +18,8 @@
                 <li><a href="#especiales"><button>Especiales</button></a></li>
                 <li><a href="#favoritos"><button>Favoritos</button></a></li>
                 <li><a href="#clientes"><button>Clientes</button></a></li>
-                <li><a href="#contacto"><button>Contacto</button></a></li>
+                <li><a href="#social"><button>Redes Sociales</button></a></li>
+                <li><a href="#contactanos"><button>Contactanos</button></a></li>
             </ul>
         </nav>
     </header>
@@ -49,18 +51,52 @@
         <section class="clientes" id="clientes">
             <article>
                 <h2>CLIENTES</h2>
-                <span>JUAN<img src="images/user-1.png" alt="user1"></span>
-                <span>Maria<img src="images/user-2.png" alt="user2"></span>
-                <span>Sergio<img src="images/user-3.png" alt="user3"></span>
+                <span class="star1">JUAN
+                <img src="images/user-1.png" alt="user1">
+                <img src="icons/icon-star.svg" alt="icon-star">
+                <p>Juan amante de los pasteles de chocolate</p>
+            </span>
+                <span class="star2">Maria
+                <img src="images/user-2.png" alt="user2">
+                <img src="icons/icon-star.svg" alt="icon-star">
+                <p>Maria amante de los pasteles de frutas</p>
+            </span>
+                <span class="star3">Sergio
+                <img src="images/user-3.png" alt="user3">
+                <img src="icons/icon-star.svg" alt="icon-star">
+                <p>Sergio amante de los pasteles de crema</p>
+            </span>
             </article>
         </section>
 
-        <footer class="contactos" id="contacto">
-            <h3>Contactanos</h3>
+        <section class="contacto" id="contactanos">
+            <article>
+                <h2>Contactanos</h2>
+                <form action="#" method="post" target="_blank">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required>
+
+                    <label for="email">Correo:</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" rows="4" required></textarea>
+
+                    <button type="submit">Envíe su mensaje</button>
+                </form>
+            </article>
+        </section>
+
+        <footer class="social" id="social">
+            <h3>Redes Sociales</h3>
             <button><img src="icons/icon-facebook.svg" alt="facebook"></button>
             <button><img src="icons/icon-instagram.svg" alt="instagram"></button>
             <button><img src="icons/icon-phone.svg" alt="phone"></button>
         </footer>
+
+        <div class="Contactanos">
+            <a href="#contactanos"><button>Contactanos</button></a>
+         </div>
 
     </main>
 </body>
