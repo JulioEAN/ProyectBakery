@@ -9,4 +9,4 @@ Menú de la página
 - Contacto
 
 ## Cambios
-- Ordena un ejemplo de ordenar un pedido personalizado
+- Ordena: Ejemplo de pedir un pedido personalizado.
