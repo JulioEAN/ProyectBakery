@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Happy Bakery</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style> .icon { font-size: 36px; color: hsl(288, 83%, 31%); /* Color de Facebook */ } </style>
+
 </head>
 <body>
     <header>
@@ -79,41 +83,54 @@
         </section>
 
         <section id="personaliza">
-            <h2>!Envíanos tus ideas y creamos algo único para ti!</h2>
-            <p>Nos contactaremos al recibir tu pedido para discutir los detalles</p>
-            <form action="">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
 
-                <label for="telefono">Número de Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="" required>
-                
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+            <div>
+                <h2>Whatsapp</h2>
+                <ul>
+                    <li>+222 111 333 4444</li>
+                    <li>+222 112 222 3333</li>
+                </ul>
+                <button type="button">Enviar Mensaje</button>
+            </div>
 
-                <label for="descripcion">descripcion de la sugerencia:</label>
-                <textarea name="descripcion" id="descripcion" required></textarea>
-
-                <label for="imagen">Sube una imagen de referencia:</label>
-                <input type="file" id="imagen" name="imagen" accept="image/*" required>
-
-                <label for="fecha">Fecha del Pedido:</label>
-                <input type="date" id="fecha" name="fecha" required>
-
-                <label for="hora">Hora del Pedido:</label>
-                <input type="time" id="hora" name="hora" required>
-
-                <label for="evento">Evento Especial:</label>
-                <select id="evento" name="evento" required>
-                    <option value="">Selecciona un evento</option>
-                    <option value="cumpleaños">Cumpleaños</option>
-                    <option value="boda">Boda</option>
-                    <option value="aniversario">Aniversario</option>
-                    <option value="otro">Otro</option>
-                </select>
-
-                <button type="submit">Enviar Pedido</button>
-            </form>
+            <div>
+                <h2>!Envíanos tus ideas y creamos algo único para ti!</h2>
+                <p>Nos contactaremos al recibir tu pedido para discutir los detalles</p>
+                <form action="">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+    
+                    <label for="telefono">Número de Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="" required>
+                    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="descripcion">descripcion de la sugerencia:</label>
+                    <textarea name="descripcion" id="descripcion" required></textarea>
+    
+                    <label for="imagen">Sube una imagen de referencia:</label>
+                    <input type="file" id="imagen" name="imagen" accept="image/*" required>
+    
+                    <label for="fecha">Fecha del Pedido:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+    
+                    <label for="hora">Hora del Pedido:</label>
+                    <input type="time" id="hora" name="hora" required>
+    
+                    <label for="evento">Evento Especial:</label>
+                    <select id="evento" name="evento" required>
+                        <option value="">Selecciona un evento</option>
+                        <option value="cumpleaños">Cumpleaños</option>
+                        <option value="boda">Boda</option>
+                        <option value="aniversario">Aniversario</option>
+                        <option value="otro">Otro</option>
+                    </select>
+    
+                    <button type="submit">Enviar Pedido</button>
+                </form>
+            </div>
+            
             
         </section>
 
@@ -139,6 +156,24 @@
 
 
     <footer>
+        <ul>
+            <li>
+                <a href="">
+                    <i class="fab fa-facebook-f icon"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fab fa-twitter icon"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fab fa-instagram icon"></i>
+                </a>
+            </li>
+        </ul>
+
         <p>&copy; 2024 Postres a tu estilo</p>
     </footer>
  
