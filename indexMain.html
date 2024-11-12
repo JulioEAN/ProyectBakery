@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>BAKERY'S</title>
+    <link rel="website icon" type="jpg"
+    href="./icons/icon-star.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!--HEADER DE LA PAGINA--> 
+
+    <header>
+        <img src="./logos/logo.png" alt="LogoTemporal" width="" height="">
+        <nav>
+            <ul>
+                <li><a href="#especiales"><button>Especiales</button></a></li>
+                <li><a href="#favoritos"><button>Favoritos</button></a></li>
+                <li><a href="#clientes"><button>Clientes</button></a></li>
+                <li><a href="#social"><button>Redes Sociales</button></a></li>
+                <li><a href="#contactanos"><button>Contactanos</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+
+
+    <!--SECCION PRESENTACION-->
+
+      <section class="presentacion">
+        <div><h2>LOS MEJORES PASTELES PARA TODA LA FAMILIA</h2>
+                <h3>BAKERY'S CAKE SHOP</h3>
+        </div>
+        <span class="image-hero">
+            <img src="images/cakes-hero.png" alt="pastel1" class="slide-active">
+        </span>
+      </section>
+
+      <!--SECCION ESPECIALES-->
+
+        <section class="especiales" id="especiales">
+            <article>
+                <h2>ESPECIALES</h2>
+                <span>texto1<img src="images/cakes-1.png" alt="espacial1" width="300px" height="300px"><button>ORDENAR AHORA</button></span>
+                <span>texto2<img src="images/cakes-2.png" alt="especial2" width="300px" height="300px"><button>ORDENAR AHORA</button></span>
+                <span>texto3<img src="images/cakes-3.png" alt="especial3" width="300px" height="300px"><button>ORDENAR AHORA</button></span>
+            </article>
+        </section>
+
+     <!--SECCION FAVORITOS-->
+
+        <section class="favoritos" id="favoritos">
+            <article>
+                <h2>FAVORITOS</h2>
+                <span>texto1<img src="images/cakes-4.png" alt="espacial1"><button>ORDENAR AHORA</button></span>
+                <span>texto2<img src="images/cakes-5.png" alt="especial2"><button>ORDENAR AHORA</button></span>
+                <span>texto3<img src="images/cakes-6.png" alt="especial3"><button>ORDENAR AHORA</button></span>
+            </article>
+        </section>
+
+    
+    <!--SECCION CLIENTES-->
+
+        <section class="clientes" id="clientes">
+            <article>
+                <h2>CLIENTES</h2>
+                <span>JUAN
+                <img src="images/user-1.png" alt="user1">
+                <img class="star1" src="icons/icon-star.svg" alt="icon-star">
+                <p>Juan amante de los pasteles de chocolate</p>
+            </span>
+                <span>Maria
+                <img src="images/user-2.png" alt="user2">
+                <img class="star2" src="icons/icon-star.svg" alt="icon-star">
+                <p>Maria amante de los pasteles de frutas</p>
+            </span>
+                <span>Sergio
+                <img src="images/user-3.png" alt="user3">
+                <img class="star3" src="icons/icon-star.svg" alt="icon-star">
+                <p>Sergio amante de los pasteles de crema</p>
+            </span>
+            </article>
+        </section>
+
+    <!--SECCION PEDIDO-->
+
+        <section class="contacto" id="contactanos">
+            <article>
+                <h2>¿Deseas realizar un pedido especial?</h2>
+                <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-link">
+                    <i class="fab fa-whatsapp icon2"></i>
+                    Escríbenos ahora mismo
+                </a>
+            </article>
+            
+            <article>
+                <h2>!Envíanos tus ideas y creamos algo único para ti!</h2>
+                <p>Nos contactaremos al recibir tu pedido para discutir los detalles</p>
+                <form action="#" method="post" target="_blank">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+    
+                    <label for="telefono">Número de Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="" required>
+                    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="descripcion">Mensaje de sugerencia:</label>
+                    <textarea name="descripcion" id="descripcion" required></textarea>
+    
+                    <label for="fecha">Fecha del Pedido:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+    
+                    <label for="hora">Hora del Pedido:</label>
+                    <input type="time" id="hora" name="hora" required>
+    
+                    <label for="evento">Evento Especial:</label>
+                    <select id="evento" name="evento" required>
+                        <option value="">Selecciona un evento</option>
+                        <option value="cumpleaños">Cumpleaños</option>
+                        <option value="boda">Boda</option>
+                        <option value="aniversario">Aniversario</option>
+                        <option value="otro">Otro</option>
+                    </select>
+    
+                    <button type="submit">Enviar Pedido</button>
+                </form>
+            </article>
+        </section>
+
+    <!--SECCION SOCIAL-->
+
+        <footer class="social" id="social">
+            <h3>Redes Sociales</h3>
+            <button><img src="icons/icon-facebook.svg" alt="facebook"></button>
+            <button><img src="icons/icon-instagram.svg" alt="instagram"></button>
+            <button><img src="icons/icon-phone.svg" alt="phone"></button>
+        </footer>
+    
+    <!--SECCION COPYRIGT-->
+
+        <div class="final">
+            <h4>© Equipo 3 Becalos 2024.</h4>
+         </div>
+
+    </main>
+</body>
+</html>

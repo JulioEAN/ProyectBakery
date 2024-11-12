@@ -1,0 +1,16 @@
+.icon2 {
+    font-size: 24px; /* Cambia el tamaño del ícono según lo necesites */
+    color: #25D366; /* Color de WhatsApp */
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+.whatsapp-link {
+    text-decoration: none; /* Sin subrayado en el enlace */
+    color: black; /* Color del texto */
+    font-size: 18px; /* Tamaño del texto */
+}
+.whatsapp-link:hover {
+    color: #25D366; /* Cambia el color al pasar el ratón */
+}
+.icon {
+     font-size: 36px; color: hsl(288, 83%, 31%); /* Color de Facebook */ 
+} 
