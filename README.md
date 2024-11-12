@@ -1,4 +1,12 @@
 # ProyectBakery
 
+Menú de la página
 
-### RAMA DE OMAR 
+- Ventajas
+- Especiales
+- Nosotros
+- Ordena
+- Contacto
+
+## Cambios
+- Ordena: Ejemplo de pedir un pedido personalizado.
