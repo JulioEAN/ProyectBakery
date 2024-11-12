@@ -8,7 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <style> .icon { font-size: 36px; color: hsl(288, 83%, 31%); /* Color de Facebook */ } </style>
-
+    <style>
+        .icon2 {
+            font-size: 24px; /* Cambia el tamaño del ícono según lo necesites */
+            color: #25D366; /* Color de WhatsApp */
+            margin-right: 8px; /* Espacio entre el ícono y el texto */
+        }
+        .whatsapp-link {
+            text-decoration: none; /* Sin subrayado en el enlace */
+            color: black; /* Color del texto */
+            font-size: 18px; /* Tamaño del texto */
+        }
+        .whatsapp-link:hover {
+            color: #25D366; /* Cambia el color al pasar el ratón */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -85,12 +99,12 @@
         <section id="personaliza">
 
             <div>
-                <h2>Whatsapp</h2>
-                <ul>
-                    <li>+222 111 333 4444</li>
-                    <li>+222 112 222 3333</li>
-                </ul>
-                <button type="button">Enviar Mensaje</button>
+                <h2>¿Deseas realizar un pedido especial?</h2>
+                
+                <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-link">
+                    <i class="fab fa-whatsapp icon2"></i>
+                    Escríbenos ahora mismo
+                </a>
             </div>
 
             <div>
