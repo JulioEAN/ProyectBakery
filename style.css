@@ -65,7 +65,7 @@ nav{
     gap: 20px;
 }
 
-.final{
+footer.final{
     display: flex;
     justify-content: center;
     padding: 20px;
