@@ -11,19 +11,55 @@
 
 <body>
 
-    <!--HEADER DE LA PAGINA--> 
+<!--HEADER DE LA PAGINA-->
 
     <header>
-        <img src="./logos/logoyiye.png" alt="LogoTemporal" width="80px" height="80px">
-        <nav>
-            <ul>
-                <li><a href="#especiales"><button>Especiales</button></a></li>
-                <li><a href="#favoritos"><button>Favoritos</button></a></li>
-                <li><a href="#clientes"><button>Clientes</button></a></li>
-                <li><a href="#ordena"><button>Ordena</button></a></li>
-                <li><a href="#contactanos"><button>Contacto</button></a></li>
-            </ul>
-        </nav>
+            <img src="./logos/logoyiye.png" alt="LogoTemporal" width="80px" height="80px" id="arriba">
+            <nav>
+                <details close>
+                    <summary>
+                        <a href="#especiales"><img src="logos/estrella-removebg-preview.png" alt="especiales" width="22px" height="22px"> Especiales</a>
+                    </summary>
+                </details>
+                <details close>
+                    <summary>
+                      <img src="logos/productos-removebg-preview.png" alt="productos" width="22px" height="22px">
+                      Productos
+                    </summary>
+                    <ul>
+                      <li>
+                        <a href="#producto1">
+                          Producto 1
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#producto2">
+                          Producto 2
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#producto3">
+                          Producto 3
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#producto4">
+                          Producto 4
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                  <details close>
+                    <summary>
+                        <a href="#reseñas" aria-label="reseñas"><img src="logos/reseñas-removebg-preview.png" alt="reseñas" width="21px" height="21px"> Reseñas</a>
+                    </summary>
+                    </details>
+                  <details close>
+                    <summary>
+                        <a href="#carrito" aria-label="Ver carrito de compras"><img src="logos/carrito-removebg-preview.png" alt="Carrito de compras" width="20px" height="20px"> Carrito</a>
+                    </summary>
+                    </details>
+            </nav>
     </header>
 
     <main>
@@ -67,9 +103,9 @@
     
     <!--SECCION CLIENTES-->
 
-        <section class="clientes" id="clientes">
+        <section class="reseñas" id="reseñas">
             <article>
-                <h2>CLIENTES</h2>
+                <h2>RESEÑAS</h2>
                 <span>JUAN
                 <img src="images/user-1.png" alt="user1">
                 <img class="star1" src="icons/icon-star.svg" alt="icon-star">
@@ -90,68 +126,82 @@
 
     <!--SECCION CONTACTO-->
 
-        <section class="contacto" id="contactanos">
-            <div>
-                <h2>¿Deseas realizar un pedido especial?</h2>
-                
-                <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-link">
-                    <i class="fab fa-whatsapp icon2"></i>
-                    Escríbenos ahora mismo
-                </a>
-            </div>
+    <section class="carrito" id="carrito">
+      <div>
+          <h2>¿Deseas realizar un pedido especial?</h2>
+          
+          <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-link">
+              <i class="fab fa-whatsapp icon2"></i>
+              Escríbenos ahora mismo
+          </a>
+      </div>
 
-            <article>
-                <h2>!Envíanos tus ideas y creamos algo único para ti!</h2>
-                <p>Nos contactaremos al recibir tu pedido para discutir los detalles</p>
-                
-                <form action="#" method="post" target="_blank">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-    
-                    <label for="telefono">Número de Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="" required>
-                    
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-    
-                    <label for="descripcion">descripcion de la sugerencia:</label>
-                    <textarea name="descripcion" id="descripcion" required></textarea>
-    
-                    <label for="fecha">Fecha del Pedido:</label>
-                    <input type="date" id="fecha" name="fecha" required>
-    
-                    <label for="hora">Hora del Pedido:</label>
-                    <input type="time" id="hora" name="hora" required>
-    
-                    <label for="evento">Evento Especial:</label>
-                    <select id="evento" name="evento" required>
-                        <option value="">Selecciona un evento</option>
-                        <option value="cumpleaños">Cumpleaños</option>
-                        <option value="boda">Boda</option>
-                        <option value="aniversario">Aniversario</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                    <button type="submit">Enviar Pedido</button>
-                </form>
-            </article>
-        </section>
+      <article>
+          <h2>!Envíanos tus ideas y creamos algo único para ti!</h2>
+          <p>Nos contactaremos al recibir tu pedido para discutir los detalles</p>
+          
+          <form action="#" method="post" target="_blank">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+
+              <label for="telefono">Número de Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="" required>
+              
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="descripcion">Descripción del Pedido:</label>
+              <textarea name="descripcion" id="descripcion" required></textarea>
+
+              <label for="fecha">Fecha de Entrega:</label>
+              <input type="date" id="fecha" name="fecha" required>
+
+              <label for="evento">Evento Especial:</label>
+              <select id="evento" name="evento" required>
+                  <option value="">Selecciona un evento</option>
+                  <option value="cumpleaños">Cumpleaños</option>
+                  <option value="boda">Boda</option>
+                  <option value="aniversario">Aniversario</option>
+                  <option value="otro">Otro</option>
+              </select>
+              <button type="submit">Enviar Pedido</button>
+          </form>
+          <p>Nos contactaremos al recibir tu pedido para discutir los detalles</p>
+      </article>
+  </section>
 
     </main>
 
     <!--SECCION SOCIAL-->
 
-    <footer class="social" id="social">
-        <h3>Redes Sociales</h3>
-        <button><img src="icons/icon-facebook.svg" alt="facebook"></button>
-        <button><img src="icons/icon-instagram.svg" alt="instagram"></button>
-        <button><img src="icons/icon-phone.svg" alt="phone"></button>
-    </footer>
+    <footer>
+      <section class="social" id="social"> 
+          <h2>Síguenos en nuestras redes sociales</h2>
+          <div class="sociales">
+            <button><img src="icons/icon-facebook.svg" alt="facebook"></button>
+            <button><img src="icons/icon-instagram.svg" alt="instagram"></button>
+            <button><img src="icons/icon-twitter.svg" alt="phone"></button>
+          </div>
+      </section>
 
-    <!--SECCION COPYRIGT-->
+      <section class="final">
+          <ul>
+              <li><a href="/terminos-y-condiciones" aria-label="Términos y Condiciones">Términos y Condiciones</a></li>
+              <li><a href="/politica-de-cookies" aria-label="Política de Cookies">Política de Cookies</a></li>
+          </ul>
+      </section>
+  
+     <section class="final">
+          <p>&copy; Equipo 3, Grupo J. Todos los derechos reservados.</p>
+     </section>
+  
+  </footer>
 
-    <div class="final">
-        <h4>© Equipo 3 Becalos 2024.</h4>
-     </div>
+    
+
+     <div>
+          <a id="scroll_arriba" href="#arriba">Arriba</a>
+    </div>
 
 </body>
 </html>

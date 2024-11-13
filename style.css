@@ -1,17 +1,66 @@
 body{
     min-height: 100vh;
+    font-family: arial, sans-serif;
+    background-color: #c7e6f8;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 header{
-    padding: 10px;
+    padding: 20px;
     background-color:#c7e6f8;
-    text-align: justify;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header li{
+    color: black;
+    margin-block-end: 16px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
 }
 
 nav{
-    position: fixed;
-    text-align: justify;
+    color: black;
+    display: flex;
+    position: static;
+    text-align: center;
+    justify-content: space-around;
+    text-decoration: none;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 10px;
 }
+
+nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+
+}
+
+/*nav a:hover{
+    background-color: #e1b07a;
+    border-radius: 5px;
+}
+*/
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li{
+    margin: 0 15px;
+}
+
 
 
 /* PALETA DE COLORES
@@ -47,7 +96,6 @@ nav{
 .especiales{
     display: flex;
     text-align: center;
-    border: solid purple 2px;
     padding: 20px;
 }
 
@@ -58,7 +106,7 @@ nav{
     padding: 20px;
 }
 
-.clientes{
+.reseñas{
     border: solid blue 2px;
     padding: 20px;
     justify-content: center;
@@ -66,19 +114,18 @@ nav{
     display: flex;
 }
 
-.contacto{
+.carrito {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    border: solid yellow 2px;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px;
+    background-color:#c7e6f8;
 }
 
 .social{
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: solid black 2px;
+    justify-content:space-around;
     padding: 20px;
     gap: 20px;
 }
@@ -146,6 +193,52 @@ nav{
     font-size: 18px;
 }
 
+#scroll_arriba {
+    background-color:#0e4153;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+    text-decoration: none;
+}
+
+#scroll_arriba:hover {
+    background-color:#0e4153;
+}
+
+#scroll_arriba a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sociales button {
+    flex: 1;
+    margin: 0 5px;
+    background-color:#ce5ec3; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Para que los botones se alineen uno al lado del otro */
+    font-size: 20px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    width: 100px; /* Ancho fijo para todos los botones */
+    height: 50px;
+}
+
+.sociales button:hover {
+    background-color:#b95cb0; /* Color de fondo al pasar el mouse */
+}
+
+
 /* Responsive design */
 
 @media (max-width: 768px) {
@@ -153,7 +246,26 @@ nav{
         flex-direction: column; /* Cambia a columna en pantallas más pequeñas si es necesario */
         align-items: center; /* Centra los elementos */
     }
+
+    .nav-list{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #c7e6f8;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-list.active{
+        display: flex;
+    }
 }
+
+
+
+
+/*DISEÑO DEL FORMULARIO*/
 
 .presentacion img {
     max-width: 100%; /* La imagen no excederá el ancho del contenedor */
@@ -161,19 +273,60 @@ nav{
     border-radius: 15px; 
 }
 
-.icon2 {
-    font-size: 24px; /* Cambia el tamaño del ícono según lo necesites */
-    color: #25D366; /* Color de WhatsApp */
-    margin-right: 8px; /* Espacio entre el ícono y el texto */
+.carrito div, .carrito article {
+    flex: 1 1 45%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.carrito h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
 .whatsapp-link {
-    text-decoration: none; /* Sin subrayado en el enlace */
-    color: black; /* Color del texto */
-    font-size: 18px; /* Tamaño del texto */
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: #25d366;
+    text-decoration: none;
+    margin-top: 10px;
 }
-.whatsapp-link:hover {
-    color: #25D366; /* Cambia el color al pasar el ratón */
+
+.whatsapp-link .icon2 {
+    margin-right: 10px;
 }
-.icon {
-     font-size: 36px; color: hsl(288, 83%, 31%); /* Color de Facebook */ 
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea, form select, form button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    background-color:#b95cb0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color:#b95cb0;
 }
