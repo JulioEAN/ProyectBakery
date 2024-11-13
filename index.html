@@ -16,13 +16,21 @@
 
     <header>
         <img src="./logos/logo-final.png" alt="LogoTemporal" width="" height="">
+        <!-- Barra de navegación(productos,reseñar, ordena) -->
         <nav>
             <ul>
-                <li><a href="#especiales"><button>Especiales</button></a></li>
-                <li><a href="#favoritos"><button>Favoritos</button></a></li>
-                <li><a href="#clientes"><button></button></a></li>
-                <li><a href="#ordena"><button>Ordena</button></a></li>
-                <li><a href="#contactanos"><button>Contacto</button></a></li>
+                <li><a href="#">Especiales</a></li>
+                <li class="dropdown"><!-- Menú desplegable de productos -->
+                    <a href="#" class="dropbtn" aria-haspopup="true" aria-expanded="false">Productos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Producto 1</a></li>
+                        <li><a href="#">Producto 2</a></li>
+                        <li><a href="#">Producto 3</a></li>
+                        <li><a href="#">Producto 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Reseñas</a></li>
+                <li><a href="#carrito" aria-label="Ver carrito de compras"><img src="cart-icon.png" alt="Carrito de compras"> Carrito</a></li>
             </ul>
         </nav>
     </header>
@@ -31,14 +39,27 @@
 
     <!--SECCION PRESENTACION-->
 
-      <section class="presentacion">
-        <div><h2>LOS MEJORES PASTELES PARA TODA LA FAMILIA</h2>
+        <section class="presentacion">
+            <div class="texto1">
+                <h1>¡LOS MEJORES PASTELES PARA TODA LA OCASION!</h1>
                 <h3>BAKERY'S CAKE SHOP</h3>
-        </div>
-        <span class="image-hero">
-            <img src="images/cakes-hero.png" alt="pastel1" class="slide-active">
-        </span>
-      </section>
+                <button class="boton_ordena">ORDENA AHORA</button>
+            </div>
+            <!--Carousel-->
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-item">
+                        <img src="image1.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image2.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image3.jpg" alt="Imagen 3">
+                    </div>
+                </div>
+            </div>
+        </section>
 
       <!--SECCION ESPECIALES-->
 
@@ -67,7 +88,7 @@
 
         <section class="clientes" id="clientes">
             <article>
-                <h2>CLIENTES</h2>
+                <h2>RESEÑA</h2>
                 <span>JUAN
                 <img src="images/user-1.png" alt="user1">
                 <img class="star1" src="icons/icon-star.svg" alt="icon-star">
@@ -86,7 +107,7 @@
             </article>
         </section>
 
-    <!--SECCION CONTACTO-->
+    <!--SECCION PEDIDO-->
         <section class="pedido" id="pedido">
             <div>
                 <h2>¿Deseas realizar un pedido especial?</h2>
@@ -111,14 +132,11 @@
                     <label for="email">Correo electrónico:</label>
                     <input type="email" id="email" name="email" required>
     
-                    <label for="descripcion">descripcion de la sugerencia:</label>
+                    <label for="descripcion">Descripción del Pedido:</label>
                     <textarea name="descripcion" id="descripcion" required></textarea>
     
-                    <label for="fecha">Fecha del Pedido:</label>
+                    <label for="fecha">Fecha de Entrega:</label>
                     <input type="date" id="fecha" name="fecha" required>
-    
-                    <label for="hora">Hora del Pedido:</label>
-                    <input type="time" id="hora" name="hora" required>
     
                     <label for="evento">Evento Especial:</label>
                     <select id="evento" name="evento" required>
@@ -130,6 +148,7 @@
                     </select>
                     <button type="submit">Enviar Pedido</button>
                 </form>
+                <p>Nos contactaremos al recibir tu pedido para discutir los detalles</p>
             </article>
         </section>
 
