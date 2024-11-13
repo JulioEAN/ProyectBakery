@@ -144,3 +144,88 @@ nav{
 .icon {
      font-size: 36px; color: hsl(288, 83%, 31%); /* Color de Facebook */ 
 }
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pedido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.pedido div, .pedido article {
+    flex: 1 1 45%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pedido h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.whatsapp-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: #25d366;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.whatsapp-link .icon2 {
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea, form select, form button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #1ebc57;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .pedido {
+        flex-direction: column;
+    }
+
+    .pedido div, .pedido article {
+        flex: 1 1 100%;
+    }
+}
