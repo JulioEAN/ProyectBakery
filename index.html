@@ -3,11 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Happy Bakery</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>BAKERY'S</title>
+    <link rel="website icon" type="jpg"
+    href="./icons/icon-star.svg">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    hola
- 
+
+<!--HEADER DE LA PAGINA-->
+
+    <!--HEADER DE LA PAGINA--> 
+    <header>
+        <div class="container">
+            <!-- Logo yeyi's -->
+            <a href="index.html" class="logo" aria-label="Página de inicio">
+                <img src="logos/logoyiye.png" alt="Logo de la empresa">
+            </a>
+            <!-- Barra de navegación(productos,reseñar, ordena) -->
+            <nav>
+                <ul>
+                    <li><a href="#especiales">Especiales</a></li>
+                    <li class="dropdown"><!-- Menú desplegable de productos -->
+                        <a href="#" class="dropbtn" aria-haspopup="true" aria-expanded="false">Productos</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Producto 1</a></li>
+                            <li><a href="#">Producto 2</a></li>
+                            <li><a href="#">Producto 3</a></li>
+                            <li><a href="#">Producto 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#reseñas">Reseñas</a></li>
+                    <li>
+                        <a href="#carrito" aria-label="Ver carrito de compras" class="icon">
+                            <img alt="Carrito " src="icons/shopping-cart-svgrepo-com.svg" > Carrito
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+
+    <!--SECCION PRESENTACION-->
+
+      <section class="presentacion">
+        <div class="texto1">
+            <h1>¡LOS MEJORES PASTELES PARA TODA LA OCASION!</h1>
+                <h3>BAKERY'S CAKE SHOP</h3>
+                <button class="boton_ordena">ORDENA AHORA</button>
+        </div>
+        <span class="image-hero">
+            <img src="images/cakes-hero.png" alt="pastel1" class="slide-active">
+        </span>
+      </section>
+
+      <!--SECCION ESPECIALES-->
+
+        <section class="especiales" id="especiales">
+            <article>
+                <h2>ESPECIALES</h2>
+                <span>texto1<img src="images/cakes-1.png" alt="espacial1" width="300px" height="300px"><button>ORDENAR AHORA</button></span>
+                <span>texto2<img src="images/cakes-2.png" alt="especial2" width="300px" height="300px"><button>ORDENAR AHORA</button></span>
+                <span>texto3<img src="images/cakes-3.png" alt="especial3" width="300px" height="300px"><button>ORDENAR AHORA</button></span>
+            </article>
+        </section>
+
+     <!--SECCION FAVORITOS-->
+
+        <section class="favoritos" id="favoritos">
+            <article>
+                <h2>FAVORITOS</h2>
+                <span>texto1<img src="images/cakes-4.png" alt="espacial1"><button>ORDENAR AHORA</button></span>
+                <span>texto2<img src="images/cakes-5.png" alt="especial2"><button>ORDENAR AHORA</button></span>
+                <span>texto3<img src="images/cakes-6.png" alt="especial3"><button>ORDENAR AHORA</button></span>
+            </article>
+        </section>
+
+    
+    <!--SECCION CLIENTES-->
+
+        <section class="reseñas" id="reseñas">
+            <article>
+                <h2>RESEÑAS</h2>
+                <span>JUAN
+                <img src="images/user-1.png" alt="user1">
+                <img class="star1" src="icons/icon-star.svg" alt="icon-star">
+                <p>Juan amante de los pasteles de chocolate</p>
+            </span>
+                <span>Maria
+                <img src="images/user-2.png" alt="user2">
+                <img class="star2" src="icons/icon-star.svg" alt="icon-star">
+                <p>Maria amante de los pasteles de frutas</p>
+            </span>
+                <span>Sergio
+                <img src="images/user-3.png" alt="user3">
+                <img class="star3" src="icons/icon-star.svg" alt="icon-star">
+                <p>Sergio amante de los pasteles de crema</p>
+            </span>
+            </article>
+        </section>
+
+    <!--SECCION CONTACTO-->
+
+    <section class="carrito" id="carrito">
+      <div>
+          <h2>¿Deseas realizar un pedido especial?</h2>
+          
+          <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-link">
+              <i class="fab fa-whatsapp icon2"></i>
+              Escríbenos ahora mismo
+          </a>
+      </div>
+
+      <article>
+          <h2>!Envíanos tus ideas y creamos algo único para ti!</h2>
+          <p>Nos contactaremos al recibir tu pedido para discutir los detalles</p>
+          
+          <form action="#" method="post" target="_blank">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+
+              <label for="telefono">Número de Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="" required>
+              
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="descripcion">Descripción del Pedido:</label>
+              <textarea name="descripcion" id="descripcion" required></textarea>
+
+              <label for="fecha">Fecha de Entrega:</label>
+              <input type="date" id="fecha" name="fecha" required>
+
+              <label for="evento">Evento Especial:</label>
+              <select id="evento" name="evento" required>
+                  <option value="">Selecciona un evento</option>
+                  <option value="cumpleaños">Cumpleaños</option>
+                  <option value="boda">Boda</option>
+                  <option value="aniversario">Aniversario</option>
+                  <option value="otro">Otro</option>
+              </select>
+              <button type="submit">Enviar Pedido</button>
+          </form>
+          <p>Nos contactaremos al recibir tu pedido para discutir los detalles</p>
+      </article>
+  </section>
+
+    </main>
+
+    <!--SECCION SOCIAL-->
+
+    <footer>
+      <section class="social" id="social"> 
+          <h2>Síguenos en nuestras redes sociales</h2>
+          <div class="sociales">
+            <button><img src="icons/icon-facebook.svg" alt="facebook"></button>
+            <button><img src="icons/icon-instagram.svg" alt="instagram"></button>
+            <button><img src="icons/icon-twitter.svg" alt="phone"></button>
+          </div>
+      </section>
+
+      <section class="final">
+          <ul>
+              <li><a href="/terminos-y-condiciones" aria-label="Términos y Condiciones">Términos y Condiciones</a></li>
+              <li><a href="/politica-de-cookies" aria-label="Política de Cookies">Política de Cookies</a></li>
+          </ul>
+      </section>
+  
+     <section class="final">
+          <p>&copy; Equipo 3, Grupo J. Todos los derechos reservados.</p>
+     </section>
+  
+  </footer>
+
+    
+
+     <div>
+          <a id="scroll_arriba" href="index.html">Arriba</a>
+    </div>
+
 </body>
 </html>

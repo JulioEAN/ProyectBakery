@@ -1,0 +1,429 @@
+body{
+    min-height: 100vh;
+    font-family: arial, sans-serif;
+    background-color: #c7e6f8;
+    margin-top: 80px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* Estilos para el header */
+header {
+    background-color: #f6a9e3;
+    padding: 10px 20px;
+    position: fixed; /* Mantener el header fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Opcional: para que el contenido no se estire demasiado */
+    margin: 0 auto;
+}
+
+/* Estilo para el logo */
+.logo img {
+    max-height: 50px;
+}
+/*Estilo para iconos*/
+.icon img {
+    max-width: 22px;
+    max-height: 22px;
+}
+/* Estilos para la barra de navegación */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+/* Estilo para los enlaces de la navegación */
+nav a {
+    color: #0e4153;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #b478ae;
+    border-radius: 5px;
+}
+
+/* Estilo para el carrito (icono y texto) */
+#carrito img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Estilos para el menú desplegable */
+nav .dropdown {
+    position: relative;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f6a9e3;
+    min-width: 160px;
+    border-radius: 5px;
+    z-index: 1000;
+   
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav .dropdown-content li {
+    padding: 10px;
+}
+
+nav .dropdown-content li a {
+    color: #0e4153;
+}
+
+nav .dropdown-content li a:hover {
+    background-color: #b478ae;
+}
+
+/*
+header{
+    padding: 20px;
+    background-color:#c7e6f8;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header li{
+    color: black;
+    margin-block-end: 16px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+nav{
+    color: black;
+    display: flex;
+    position: static;
+    text-align: center;
+    justify-content: space-around;
+    text-decoration: none;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+
+}
+
+nav a:hover{
+    background-color: #e1b07a;
+    border-radius: 5px;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li{
+    margin: 0 15px;
+}
+
+
+
+/* PALETA DE COLORES
+
+#c7e6f8
+#f6a9e3
+#0e4153
+#b478ae
+
+/*
+
+/* DISEÑOS DE SECCIONES */
+
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:#c7e6f8 ;
+    padding: 20px;
+    text-align: left;
+}
+
+/*TEXTO DE LA CLASE PRESENTACION*/
+
+.texto1{
+    font-size: 25px;
+    color:#0e4153;
+}
+
+/* ----- */
+
+.especiales{
+    display: flex;
+    text-align: center;
+    padding: 20px;
+}
+
+.favoritos{
+    display: flex;
+    text-align: center;
+    border: solid green 2px;
+    padding: 20px;
+}
+
+.reseñas{
+    border: solid blue 2px;
+    padding: 20px;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+}
+
+.carrito {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:#c7e6f8;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+.final{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* DISEÑO IMAGENES ESTRELLAS */
+
+.star1{
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    background-image: url(icons/icon-star.svg);
+    background-repeat: repeat-x;
+    background-size: 30px 30px;
+}
+
+.star2{
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    background-image: url(icons/icon-star.svg);
+    background-repeat: repeat-x;
+    background-size: 30px 30px;
+}
+
+.star3{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(icons/icon-star.svg);
+    background-repeat: repeat-x;
+    background-size: 30px 30px;
+}
+
+/* DISEÑO IMAGENES*/
+
+.image-hero{
+    margin-left: 20px;
+    width: 70%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    background-color:#0e4153;
+}
+
+/*DISEÑO DE BOTONES*/
+
+.boton_ordena{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#b95cb0;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#scroll_arriba {
+    background-color:#0e4153;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+    text-decoration: none;
+}
+
+#scroll_arriba:hover {
+    background-color:#0e4153;
+}
+
+#scroll_arriba a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sociales button {
+    flex: 1;
+    margin: 0 5px;
+    background-color:#ce5ec3; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Para que los botones se alineen uno al lado del otro */
+    font-size: 20px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    width: 100px; /* Ancho fijo para todos los botones */
+    height: 50px;
+}
+
+.sociales button:hover {
+    background-color:#b95cb0; /* Color de fondo al pasar el mouse */
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .presentacion {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas si es necesario */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .nav-list{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #c7e6f8;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-list.active{
+        display: flex;
+    }
+}
+
+
+
+
+/*DISEÑO DEL FORMULARIO*/
+
+.presentacion img {
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 15px; 
+}
+
+.carrito div, .carrito article {
+    flex: 1 1 45%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carrito h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.whatsapp-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    color: #25d366;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.whatsapp-link .icon2 {
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea, form select, form button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    background-color:#b95cb0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color:#b95cb0;
+}
+
+
+
